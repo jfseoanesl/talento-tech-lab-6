@@ -1,0 +1,189 @@
+Microsoft Windows [Versión 10.0.22631.4317]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>code .
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git init
+Initialized empty Git repository in G:/Mi unidad/Talento Tech/Programacion basica/2.Trabajando con Git/Sesion 6/Laboratorio/.git/
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git add index.html
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git commit -m "Version con index.html y titulo primario"
+[master (root-commit) 1d85a75] Version con index.html y titulo primario
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+nothing to commit, working tree clean
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git add .
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git commit -m "Nueva version desarrollada - incluye titulo h3"
+
+[master 794343e] Nueva version desarrollada - incluye titulo h3
+ 1 file changed, 13 insertions(+)
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+nothing to commit, working tree clean
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git log
+commit 794343e56368796bd6f16d9e05f3c6d88184a905 (HEAD -> master)
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:05:47 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit 1d85a75a624f2b26ec6c35ccb65f42a1acde5142
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:00:20 2024 -0500
+
+    Version con index.html y titulo primario
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git branch
+* master
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git branch rama-version-3
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git branch
+* master
+  rama-version-3
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git checkout rama-version-3
+Switched to branch 'rama-version-3'
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git branch
+  master
+* rama-version-3
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch rama-version-3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git add .
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch rama-version-3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git commit -m "Version 3 rama-version-3 incluye titulo h4"
+[rama-version-3 c7e0187] Version 3 rama-version-3 incluye titulo h4
+ 1 file changed, 1 insertion(+)
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git log
+commit c7e0187dae54244e2c73148f70e8d1135d1f7700 (HEAD -> rama-version-3)
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:12:41 2024 -0500
+
+    Version 3 rama-version-3 incluye titulo h4
+
+commit 794343e56368796bd6f16d9e05f3c6d88184a905 (master)
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:05:47 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit 1d85a75a624f2b26ec6c35ccb65f42a1acde5142
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git checkout master
+Switched to branch 'master'
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git branch
+* master
+  rama-version-3
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>code .
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git merge rama-version-3
+Updating 794343e..c7e0187
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>code .
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git status
+On branch master
+nothing to commit, working tree clean
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git log
+commit c7e0187dae54244e2c73148f70e8d1135d1f7700 (HEAD -> master, rama-version-3)
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:12:41 2024 -0500
+
+    Version 3 rama-version-3 incluye titulo h4
+
+commit 794343e56368796bd6f16d9e05f3c6d88184a905
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:05:47 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit 1d85a75a624f2b26ec6c35ccb65f42a1acde5142
+Author: Jairo Francisco Seoanes Leon <jafrasele@gmail.com>
+Date:   Tue Nov 12 22:00:20 2024 -0500
+
+    Version con index.html y titulo primario
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git remote add origin https://github.com/jfseoanesl/talento-tech-lab-6.git
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 1.00 KiB | 114.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/jfseoanesl/talento-tech-lab-6.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+G:\Mi unidad\Talento Tech\Programacion basica\2.Trabajando con Git\Sesion 6\Laboratorio>
